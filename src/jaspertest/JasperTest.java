@@ -29,8 +29,6 @@ public class JasperTest {
             JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
 
             JRDataSource jrDataSource = new JREmptyDataSource();
-//              <textFieldExpression><![CDATA[$P{shippingAddress}]]></textFieldExpression>
-             
 
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, jrDataSource);
 
